@@ -21,7 +21,7 @@ CURDIR=$$(pwd)
 default: build
 
 build: vet test
-	go install
+	go build
 
 test: fmtcheck
 	go test -v -coverprofile=coverage.out './...'
